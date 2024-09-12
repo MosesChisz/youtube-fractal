@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { kanit } from "./font";
+import Providers from "@/providers";
 
 
 
@@ -17,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={kanit.className}>
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
