@@ -5,7 +5,7 @@ import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 const isProtectedRoute = createRouteMatcher(['/account(.*)']);
 
 export default clerkMiddleware((auth, request) => {
-    //if the route is protected so redirect to login
+  //if the route is protected so redirect to login
     if (!isProtectedRoute(request)) {
       auth().protect({
         unauthenticatedUrl: process.env.NEXT_PUBLIC_SERVER_URL,
