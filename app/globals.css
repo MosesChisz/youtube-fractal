@@ -3,12 +3,20 @@
 @tailwind utilities;
 
 
+html{
+  @apply text-body
+}
 
 @layer utilities {
   
 }
 
 @layer base {
+
+  i,svg,button{
+    @apply cursor-pointer
+  }
+
   h1{
     @apply text-h1
   }

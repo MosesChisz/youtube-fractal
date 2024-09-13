@@ -1,6 +1,11 @@
 import React from 'react'
+import Main from './Main'
 
 export default function Header() {
-  return <div>Header</div>
+  return (
+      <header className='h-[80px]'>
+        <Main/>
+      </header>
+    );
   
   }
