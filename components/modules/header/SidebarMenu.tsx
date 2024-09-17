@@ -92,7 +92,7 @@ const [subCategories, setSubCategories] = useState<SubCategory[]>()
                         <TabsContent value='page'>
                             {
                                 pageApi.data && pageApi.data.map((item: Page) => (
-                                    <div key={item._id} className='group inline-flex items-center px-4 py-2 gap-4 wifull hover:texte-primary-700 cursor-pointer capitalize'>
+                                    <div key={item._id} className='group inline-flex items-center px-4 py-2 gap-4 w-full hover:text-primary-700 cursor-pointer capitalize'>
                                         <div className='flex items-center gap-4 w-full'>
                                             <span onClick={() => router.push(`/categories/${item.link}/products`)}>{item.name}</span>
                                             {item?.subpage && item.subpage.length > 0 && (

@@ -5,8 +5,8 @@ import Row from '@/components/customs/Row'
 import React, { useState } from 'react'
 import MainMenu from './MainMenu'
 import IconsGroups from './IconsGroups'
-import MobileBottom from '@/components/customs/MobileBottom'
 import MobileButton from './MobileButton'
+import MobileBottom from '@/components/customs/MobileBottom'
 
 
 export default function Main() {

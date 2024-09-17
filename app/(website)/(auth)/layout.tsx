@@ -1,3 +1,4 @@
+"use client"
 import { Button } from "@/components/ui/button";
 import { MoveLeft } from "lucide-react";
 import { useRouter } from "next/navigation";
