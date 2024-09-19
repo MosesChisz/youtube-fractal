@@ -22,7 +22,7 @@ export default function IconsGroups({
         <Button variant="nostyle" size="icon" onClick={() => setOpenSearchBar(!openSearchBar)}>
           <CiSearch size="40" className='hover:text-primary-700'/>
         </Button>
-        <Button variant="nostyle" size="icon" className='hidden sm:block relative' onClick={() => setOpenCartBar(!openCartBar)}>
+        <Button variant="nostyle" size="icon" className='relative' onClick={() => setOpenCartBar(!openCartBar)}>
           <CiShoppingCart size="40" className='hover:text-primary-700'/>
           <span className='absolute flex items-center justify-center text-white bg-primary-500 w-6 h-6 rounded-full top-1 left'>
             0
